@@ -1,0 +1,925 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#681c32">
+  <meta name="description" content="A field study portfolio documenting teaching philosophy, classroom observations, activities, reflections, and evidence of learning.">
+  <title>Field Notes | Andrea's Field Study Portfolio</title>
+  <script>
+    try {
+      const savedPortfolioTheme = localStorage.getItem('fieldStudyPortfolioTheme');
+      if (savedPortfolioTheme === 'dark' || (!savedPortfolioTheme && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+        document.documentElement.dataset.theme = 'dark';
+      }
+    } catch {}
+  </script>
+  <script>
+    try {
+      if (!sessionStorage.getItem('fieldStudyPortfolioIntro') && !window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+        sessionStorage.setItem('fieldStudyPortfolioIntro', 'seen');
+        document.documentElement.classList.add('intro-pending');
+      }
+    } catch {}
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="intro-splash" id="intro-splash" role="status" aria-labelledby="intro-splash-title" aria-describedby="intro-splash-subtitle">
+    <div class="intro-splash-content">
+      <div class="intro-splash-logos" aria-hidden="true">
+        <img class="intro-splash-logo intro-splash-wordmark" src="LOGO/UCN%20LOGO.png" alt="">
+        <img class="intro-splash-logo" src="LOGO/UCNCOED.png" alt="">
+        <img class="intro-splash-logo" src="LOGO/UCNSIGMA.png" alt="">
+      </div>
+      <h1 class="intro-splash-title" id="intro-splash-title">Field Study 1</h1>
+      <p class="intro-splash-subtitle" id="intro-splash-subtitle">Teaching &amp; Learning Portfolio</p>
+      <span class="intro-splash-rule" aria-hidden="true"></span>
+    </div>
+    <button class="intro-splash-skip" id="skip-intro" type="button">Skip intro</button>
+  </div>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="header-inner wrap">
+      <a class="brand" href="#home" aria-label="University, College of Education, and Sigma logos. Field Notes home.">
+        <span class="brand-logos" aria-hidden="true">
+          <img class="brand-logo" src="LOGO/UCN%20LOGO.png" alt="">
+          <img class="brand-logo" src="LOGO/UCNCOED.png" alt="">
+          <img class="brand-wordmark" src="LOGO/UCNSIGMA.png" alt="">
+        </span>
+        <span class="brand-copy"><strong>Field Study 1</strong><span>Teaching &amp; learning portfolio</span></span>
+      </a>
+      <div class="header-tools">
+        <div class="theme-switch" role="group" aria-label="Color theme">
+          <button class="theme-option" type="button" data-theme-choice="light" aria-label="Light mode" title="Light mode" aria-pressed="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2m0 16v2M4.93 4.93l1.42 1.42m11.3 11.3 1.42 1.42M2 12h2m16 0h2M4.93 19.07l1.42-1.42m11.3-11.3 1.42-1.42"/></svg>
+          </button>
+          <button class="theme-option" type="button" data-theme-choice="dark" aria-label="Dark mode" title="Dark mode" aria-pressed="false">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M20.2 15.2A8.6 8.6 0 0 1 8.8 3.8 8.8 8.8 0 1 0 20.2 15.2Z"/></svg>
+          </button>
+        </div>
+        <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-navigation">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+          <span class="visually-hidden">Menu</span>
+        </button>
+      </div>
+    </div>
+    <nav class="site-nav" id="primary-navigation" aria-label="Main navigation">
+      <ul class="nav-list wrap">
+        <li><a class="nav-link is-active" href="#home">Home</a></li>
+        <li><a class="nav-link" href="#introduction">Introduction</a></li>
+        <li><a class="nav-link" href="#biography">Field Student (FSS) Biography</a></li>
+        <li><a class="nav-link" href="#philosophy">Philosophy of Teaching &amp; Learning: Pre and Post Field Study</a></li>
+        <li><a class="nav-link" href="#activities">Compilation of Field Study Worksheet Activities</a></li>
+        <li><a class="nav-link" href="#evidence">Evidence of Learning</a></li>
+        <li><a class="nav-link" href="#retrospection">Retrospection</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="hero" id="home" aria-labelledby="hero-title">
+      <img class="hero-photo" src="PIC/HomepageBG.png" alt="" aria-hidden="true" fetchpriority="high">
+      <div class="hero-shade" aria-hidden="true"></div>
+      <div class="hero-inner wrap">
+        <div class="hero-content">
+          <p class="eyebrow">Field Study 1 E-Portfolio · October 2026</p>
+          <h1 id="hero-title">ANDREA V.<br>ROMANILLOS</h1>
+          <p class="hero-role">Field Study Student</p>
+          <div class="hero-institution">
+            <p class="hero-university">UNIVERSITY OF CAMARINES NORTE</p>
+            <p class="hero-location">College of Education<br>Daet, Camarines Norte</p>
+          </div>
+          <div class="hero-submission">
+            <p>Submitted in Partial Fulfillment of the<br>Requirements for the Degree of</p>
+            <p class="hero-degree">Bachelor of Secondary Education<br>Major in Mathematics</p>
+          </div>
+          <div class="hero-placement">
+            <p class="hero-placement-school">UCN–Abaño Laboratory High School</p>
+            <p>Daet, Camarines Norte</p>
+            <p class="hero-placement-label">Cooperating School</p>
+          </div>
+          <a class="button button-light hero-actions" href="#introduction">Explore the portfolio <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></a>
+        </div>
+        <div class="hero-portrait-wrap">
+          <img class="hero-portrait" src="PIC/FormalPicture.png" alt="Formal portrait of Andrea V. Romanillos" fetchpriority="high">
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="introduction" aria-labelledby="intro-title">
+      <div class="wrap reveal">
+        <div class="section-heading">
+          <p class="section-kicker">01 · Course overview</p>
+          <h2 id="intro-title">Introduction</h2>
+        </div>
+        <div class="intro-copy">
+          <p class="intro-course-label">FIELD STUDY 1:</p>
+          <h3 class="intro-subtitle">Observations of Teaching-Learning in Actual School Environment</h3>
+          <p>Field Study 1 provides an opportunity for future educators to observe how teaching and learning take place in an actual classroom setting. This course allows field study students to connect the theories and principles they have learned during their college years with actual teaching practices and classroom experiences.</p>
+          <p>This e-portfolio presents the author's observations, experiences, and learning throughout Field Study 1. It begins with her <strong>Field Study Student (FSS) Biography and Philosophy of Teaching and Learning: Pre and Post Field Study</strong>, which reflect her background and beliefs about education. It also includes the <strong>Compilation of Field Study Worksheet Activities, Reflections and Insights from Field Study Observations, Evidence of Learning, Retrospection and Documentation</strong>, which present her accomplishments, personal reflections, and realizations during the course.</p>
+          <p>Through classroom observations, the author realized that teaching involves more than simply explaining lessons and giving activities. She was able to observe learners' behavior, motivation, and participation, as well as how her resource teacher applied different teaching strategies and classroom management techniques to address students' learning needs. As a future mathematics educator, she gained valuable insights into how lessons can be presented in ways that make mathematical concepts easier to understand and more meaningful to learners. She believes that the knowledge and experiences she gained from Field Study 1 will serve as a valuable foundation as she continues preparing for the teaching profession.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-tint" id="biography" aria-labelledby="bio-title">
+      <div class="wrap reveal">
+        <div class="section-heading">
+          <p class="section-kicker">02 · Field Study Student</p>
+          <h2 id="bio-title">FSS Biography</h2>
+        </div>
+        <div class="bio-grid">
+          <aside class="bio-aside">
+            <h3>Andrea Valencia Romanillos</h3>
+            <p>Fourth-Year Pre-Service Mathematics Teacher</p>
+            <ul class="bio-facts">
+              <li><strong>Program</strong>Bachelor of Secondary Education Major in Mathematics</li>
+              <li><strong>University</strong>University of Camarines Norte · Abaño Campus</li>
+              <li><strong>Scholarship</strong>LGU-Daet Expanded Scholarship Program · 2024-Present</li>
+            </ul>
+            <button class="button button-light cv-open-button" id="open-cv" type="button" aria-haspopup="dialog" aria-controls="cv-dialog">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><path d="M7 3h7l5 5v13H7a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2Z"/><path d="M14 3v6h5M9 13h6M9 17h6"/></svg>
+              <span>View Curriculum Vitae</span>
+            </button>
+          </aside>
+          <div class="bio-copy">
+            <h3>Biography</h3>
+            <p>Andrea Valencia Romanillos is a fourth-year pre-service mathematics teacher at the University of Camarines Norte – Abaño Campus, currently pursuing a Bachelor of Secondary Education Major in Mathematics. Her decision to pursue the teaching profession was greatly influenced by her aunts, who are dedicated educators. Growing up in a family surrounded by teachers, she developed an early interest in teaching and was inspired by their commitment to the profession.</p>
+            <p>At a young age, Andrea was already interested in activities related to teaching. She enjoyed playing with other children, often taking the role of a teacher while her playmates acted as her students. As she grew older, she began helping her aunts check and record students' schoolwork, which allowed her to become more familiar with some of the responsibilities of a teacher. During summer vacations, she also spent time teaching her younger cousins basic lessons, particularly in Mathematics. Through these experiences, she discovered how fulfilling it is to share her knowledge and help others, not only in academics but also in other aspects of life.</p>
+            <p>In terms of her academic journey, Andrea consistently strives to give her best in every task and responsibility. She values focus, hard work, creativity, and proper time management in accomplishing her academic requirements. Since 2024, she has been one of the scholarship grantees of the LGU-Daet Expanded Scholarship Program, which serves as an additional motivation for her to remain committed to her studies and make the most of the opportunities given to her.</p>
+            <p>Andrea has made a personal promise to herself and her family to complete her degree on time. After graduation, she plans to take and pass the Licensure Examination for Professional Teachers (LEPT) and secure a stable job to support herself and her family. If circumstances allow, she also intends to pursue a master's degree and support her older sister in continuing her education at the graduate level. Above all, one of her greatest goals is to give back the love, support, and sacrifices of the people who have helped her throughout her journey.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <dialog class="cv-dialog" id="cv-dialog" aria-labelledby="cv-title">
+      <div class="cv-dialog-header">
+        <div>
+          <p class="cv-dialog-kicker">Field Study Student · Mathematics Education</p>
+          <h2 id="cv-title">Curriculum Vitae</h2>
+        </div>
+        <button class="cv-dialog-close" type="button" aria-label="Close curriculum vitae">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="m6 6 12 12M18 6 6 18"/></svg>
+        </button>
+      </div>
+      <div class="cv-dialog-content">
+        <section class="cv-section" aria-labelledby="cv-personal-title">
+          <h3 id="cv-personal-title">Personal Information</h3>
+          <dl class="cv-details">
+            <div><dt>Name</dt><dd>Andrea V. Romanillos</dd></div>
+            <div><dt>Address</dt><dd>Purok 6, Barangay II, Pasig, Daet, Camarines Norte</dd></div>
+            <div><dt>Mobile number</dt><dd><a href="tel:09931362113">09931362113</a></dd></div>
+            <div><dt>Email address</dt><dd><a href="mailto:andrearomanillos.04@gmail.com">andrearomanillos.04@gmail.com</a></dd></div>
+            <div><dt>Age</dt><dd>21</dd></div>
+            <div><dt>Civil status</dt><dd>Single</dd></div>
+            <div><dt>Sex</dt><dd>Female</dd></div>
+            <div><dt>Date of birth</dt><dd>November 20, 2004</dd></div>
+            <div><dt>Place of birth</dt><dd>Daet, Camarines Norte</dd></div>
+            <div><dt>Citizenship</dt><dd>Filipino</dd></div>
+            <div><dt>Religion</dt><dd>Roman Catholic</dd></div>
+            <div><dt>Parents</dt><dd>Antonio A. Romanillos and Grace V. Romanillos</dd></div>
+            <div><dt>Sibling</dt><dd>Angelica V. Romanillos</dd></div>
+          </dl>
+        </section>
+        <section class="cv-section" aria-labelledby="cv-education-title">
+          <h3 id="cv-education-title">Educational Attainment</h3>
+          <div class="cv-education-list">
+            <article class="cv-education-item">
+              <p class="cv-level">Tertiary <span>2023–Present</span></p>
+              <h4>University of Camarines Norte · Abaño Campus</h4>
+              <p>Bachelor of Secondary Education, Major in Mathematics</p>
+              <p>Daet, Camarines Norte</p>
+            </article>
+            <article class="cv-education-item">
+              <p class="cv-level">Senior High School <span>2021–2023</span></p>
+              <h4>Vinzons Pilot High School</h4>
+              <p>Science, Technology, Engineering and Mathematics</p>
+              <p>Vinzons, Camarines Norte</p>
+            </article>
+            <article class="cv-education-item">
+              <p class="cv-level">Secondary <span>2017–2021</span></p>
+              <h4>Moreno Integrated School</h4>
+              <p>Science, Technology, and Engineering</p>
+              <p>Daet, Camarines Norte</p>
+            </article>
+            <article class="cv-education-item">
+              <p class="cv-level">Elementary <span>2011–2017</span></p>
+              <h4>San Luis Elementary School</h4>
+              <p>Daet, Camarines Norte</p>
+            </article>
+          </div>
+        </section>
+        <section class="cv-section" aria-labelledby="cv-affiliations-title">
+          <h3 id="cv-affiliations-title">Affiliations</h3>
+          <div class="cv-affiliation-list">
+            <article class="cv-affiliation-item">
+              <h4>Solidarity of Integrated Governance of Mathematician Association (SIGMA)</h4>
+              <p>Member <span>2023–Present</span></p>
+            </article>
+            <article class="cv-affiliation-item">
+              <h4>National Service Training Program – Literacy Training Service (NSTP-LTS)</h4>
+              <p>General Officer – Business Manager <span>2023–2024</span></p>
+            </article>
+          </div>
+        </section>
+      </div>
+    </dialog>
+
+    <section class="section" id="philosophy" aria-labelledby="philosophy-title">
+      <div class="wrap reveal">
+        <header class="section-heading philosophy-heading">
+          <p class="section-kicker">03 · Reflective practice</p>
+          <h2 id="philosophy-title">Philosophy of Teaching and Learning: Pre and Post Field Study</h2>
+          <p>A teacher's philosophy of teaching and learning reflects the beliefs and principles that guide classroom practices, instructional decisions, and relationships with learners. This section presents the author's beliefs before Field Study 1 and how these were strengthened, broadened, and developed through actual classroom observations and learning experiences.</p>
+        </header>
+
+        <section class="philosophy-phase" aria-labelledby="pre-field-title">
+          <div class="philosophy-phase-heading">
+            <span class="phase-label">Before · Initial perspective</span>
+            <h3 id="pre-field-title">Philosophy of Teaching and Learning: Pre-Field Study</h3>
+          </div>
+          <p class="philosophy-intro">Before taking Field Study 1, my beliefs about teaching and learning were mainly influenced by my experiences as a student and the knowledge I had acquired from my professional education courses. I already had certain ideas about what makes teaching effective, particularly in helping students understand lessons and develop their academic abilities.</p>
+          <div class="philosophy-columns">
+            <section class="philosophy-group" aria-labelledby="pre-beliefs-title">
+              <h4 id="pre-beliefs-title">Beliefs I held before the field study:</h4>
+              <ul class="philosophy-list">
+                <li>Teachers should possess sufficient knowledge of their subject matter and explain lessons clearly and systematically.</li>
+                <li>Students learn better when they are encouraged to participate, ask questions, and express their ideas during classroom discussions.</li>
+                <li>Learning Mathematics requires consistent practice, appropriate guidance, and opportunities to apply mathematical concepts.</li>
+                <li>A respectful and supportive relationship between teachers and learners encourages students to participate and improve their performance.</li>
+                <li>Well-prepared lessons, clear instructions, and suitable learning activities contribute to an organized and productive learning experience.</li>
+              </ul>
+            </section>
+            <section class="philosophy-group" aria-labelledby="pre-views-title">
+              <h4 id="pre-views-title">Initial views I had not fully considered:</h4>
+              <ul class="philosophy-list">
+                <li>I placed greater emphasis on how well a teacher explained and presented the lesson than on the different factors that could affect students' learning.</li>
+                <li>I tended to give more attention to correct answers and academic performance without fully considering the learning process, individual progress, and other ways students demonstrate understanding.</li>
+              </ul>
+            </section>
+          </div>
+        </section>
+
+        <section class="philosophy-phase philosophy-post" aria-labelledby="post-field-title">
+          <div class="philosophy-phase-heading">
+            <span class="phase-label">After · Informed by observation</span>
+            <h3 id="post-field-title">Philosophy of Teaching and Learning: Post-Field Study</h3>
+          </div>
+          <p class="philosophy-intro">After completing my Field Study 1 observations and worksheet activities, I developed a broader perspective on the teaching and learning process. Observing actual classroom situations allowed me to recognize that effective teaching involves not only mastery of the subject matter but also thoughtful planning, appropriate instructional practices, and consideration of learners' individual needs.</p>
+          <h4 class="philosophy-subheading">Beliefs strengthened and developed through Field Study 1</h4>
+          <div class="philosophy-insights">
+            <article class="philosophy-insight">
+              <span class="episode-reference">Episodes 1, 5, 6, and 7</span>
+              <p>A safe, organized, and supportive learning environment contributes to students' concentration, participation, and overall learning experiences.</p>
+            </article>
+            <article class="philosophy-insight">
+              <span class="episode-reference">Episodes 2 and 3</span>
+              <p>Every learner has different abilities, interests, experiences, and backgrounds; therefore, teachers should provide appropriate guidance and learning opportunities that consider these differences.</p>
+            </article>
+            <article class="philosophy-insight">
+              <span class="episode-reference">Episode 4</span>
+              <p>The family, school, and community have significant roles in learners' development, making cooperation and communication among them essential in supporting education.</p>
+            </article>
+            <article class="philosophy-insight">
+              <span class="episode-reference">Episodes 8, 9, and 10</span>
+              <p>Effective teaching requires clear learning objectives, appropriate instructional strategies, and assessment activities that are aligned with the intended learning outcomes.</p>
+            </article>
+            <article class="philosophy-insight">
+              <span class="episode-reference">Episodes 9, 10, and 16</span>
+              <p>Students develop meaningful understanding when they actively participate in discussions, collaborate with others, solve problems, explain their reasoning, and connect lessons with real-life situations.</p>
+            </article>
+            <article class="philosophy-insight">
+              <span class="episode-reference">Episodes 12 and 13</span>
+              <p>Assessment should not focus solely on grades but should also provide feedback, identify learning difficulties, monitor progress, and guide improvements in teaching and learning.</p>
+            </article>
+            <article class="philosophy-insight">
+              <span class="episode-reference">Episode 11</span>
+              <p>Technology and instructional materials can support effective learning when selected and used appropriately according to lesson objectives and learners' needs.</p>
+            </article>
+            <article class="philosophy-insight">
+              <span class="episode-reference">Episodes 14 and 15</span>
+              <p>Teaching requires professional competence, ethical behavior, adaptability, and continuous learning to respond effectively to the changing needs of students and education.</p>
+            </article>
+          </div>
+
+          <section class="philosophy-clarification" aria-labelledby="clarification-title">
+            <h4 id="clarification-title">Clarifying and improving my previous understanding:</h4>
+            <ul class="philosophy-list">
+              <li>Effective teaching is not measured only by how clearly a teacher delivers the lesson. Teachers also serve as facilitators who guide students in developing understanding, reasoning, problem-solving skills, and independence.</li>
+              <li>Students' learning cannot be determined solely through correct answers, examination results, or numerical grades. Their participation, improvement, demonstrated skills, and ability to apply what they have learned are equally important indicators of learning.</li>
+            </ul>
+          </section>
+
+          <p class="philosophy-conclusion">As a future mathematics educator, I now believe that teaching should balance mastery of essential mathematical concepts with learner-centered activities that develop critical thinking and meaningful understanding. These realizations have strengthened my belief that education should prepare learners not only to succeed academically but also to apply their knowledge and skills beyond the classroom.</p>
+        </section>
+      </div>
+    </section>
+
+    <section class="section section-tint" id="activities" aria-labelledby="activities-title">
+      <div class="wrap reveal">
+        <div class="section-heading">
+          <p class="section-kicker">04 · Learning Episodes 1–16</p>
+          <h2 id="activities-title">Compilation of Field Study Worksheet Activities</h2>
+          <p>This section contains the compilation of the author's accomplished worksheet activities from Learning Episodes 1 to 16 of Field Study 1. Each learning episode presents her observations, analyses, reflections, and evidence of learning gathered through actual school and classroom experiences at UCN–Abaño Laboratory High School. These activities cover different aspects of the teaching-learning process, including the school environment, learner diversity, classroom management, instructional strategies, assessment practices, and teachers' professional responsibilities. Through these worksheets, the author was able to connect educational theories with actual classroom practices and reflect on the knowledge and insights she gained as a future mathematics educator.</p>
+        </div>
+        <div class="activity-grid" id="activity-grid" aria-live="polite"></div>
+        <div class="activity-more-wrap">
+          <p class="activity-count" id="activity-count" aria-live="polite">Showing 8 of 16 learning episodes</p>
+          <button class="button button-outline activity-more-button" id="activity-more" type="button" aria-expanded="false" aria-controls="activity-grid">
+            <span>View more episodes</span>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg>
+          </button>
+        </div>
+        
+    </section>
+
+    <dialog class="cv-dialog episode-reflection-dialog" id="episode-reflection-dialog" aria-labelledby="episode-reflection-title">
+      <div class="cv-dialog-header">
+        <div>
+          <p class="cv-dialog-kicker">Field Study 1 · Reflection</p>
+          <h2 id="episode-reflection-title">View Reflection</h2>
+        </div>
+        <button class="cv-dialog-close" type="button" aria-label="Close reflection">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="m6 6 12 12M18 6 6 18"/></svg>
+        </button>
+      </div>
+      <div class="cv-dialog-content">
+        <section class="cv-section">
+          <h3 id="episode-reflection-episode-title"></h3>
+          <p class="episode-reflection-copy" id="episode-reflection-content"></p>
+        </section>
+      </div>
+    </dialog>
+
+    <section class="section section-blue" id="evidence" aria-labelledby="evidence-title">
+      <div class="wrap reveal">
+        <div class="section-heading">
+          <p class="section-kicker">05 · Learning made visible</p>
+          <h2 id="evidence-title">Evidence of learning</h2>
+          
+        </div>
+        <div class="evidence-grid">
+          <article class="evidence-card quiz-evidence-card">
+            <span class="evidence-symbol" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M7 3h7l5 5v13H7a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2Z"/><path d="M14 3v6h5M9 13h6M9 17h6"/></svg></span>
+            <p class="quiz-evidence-label">Quiz result</p>
+            <h3>Quiz No. 1</h3>
+            <dl class="quiz-evidence-meta">
+              <div><dt>Date</dt><dd>September 15, 2026</dd></div>
+              <div><dt>Score</dt><dd>5/5</dd></div>
+            </dl>
+            <button class="button button-light evidence-view-button" type="button" data-title="Quiz No. 1" data-image="Scores%20in%20Quizzes%20(Evidence%20of%20Learning)/Quiz%20No.1.PNG" aria-haspopup="dialog" aria-controls="quiz-picture-dialog">View picture</button>
+          </article>
+          <article class="evidence-card quiz-evidence-card">
+            <span class="evidence-symbol" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M7 3h7l5 5v13H7a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2Z"/><path d="M14 3v6h5M9 13h6M9 17h6"/></svg></span>
+            <p class="quiz-evidence-label">Quiz result</p>
+            <h3>Quiz No. 2</h3>
+            <dl class="quiz-evidence-meta">
+              <div><dt>Date</dt><dd>September 15, 2026</dd></div>
+              <div><dt>Score</dt><dd>4/5</dd></div>
+            </dl>
+            <button class="button button-light evidence-view-button" type="button" data-title="Quiz No. 2" data-image="Scores%20in%20Quizzes%20(Evidence%20of%20Learning)/Quiz%20No.2.PNG" aria-haspopup="dialog" aria-controls="quiz-picture-dialog">View picture</button>
+          </article>
+          <article class="evidence-card quiz-evidence-card">
+            <span class="evidence-symbol" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M7 3h7l5 5v13H7a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2Z"/><path d="M14 3v6h5M9 13h6M9 17h6"/></svg></span>
+            <p class="quiz-evidence-label">Quiz result</p>
+            <h3>Quiz No. 3</h3>
+            <dl class="quiz-evidence-meta">
+              <div><dt>Date</dt><dd>September 15, 2026</dd></div>
+              <div><dt>Score</dt><dd>4/5</dd></div>
+            </dl>
+            <button class="button button-light evidence-view-button" type="button" data-title="Quiz No. 3" data-image="Scores%20in%20Quizzes%20(Evidence%20of%20Learning)/Quiz%20No.3.PNG" aria-haspopup="dialog" aria-controls="quiz-picture-dialog">View picture</button>
+          </article>
+          <article class="evidence-card quiz-evidence-card">
+            <span class="evidence-symbol" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M7 3h7l5 5v13H7a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2Z"/><path d="M14 3v6h5M9 13h6M9 17h6"/></svg></span>
+            <p class="quiz-evidence-label">Quiz result</p>
+            <h3>Quiz No. 4</h3>
+            <dl class="quiz-evidence-meta">
+              <div><dt>Date</dt><dd>September 15, 2026</dd></div>
+              <div><dt>Score</dt><dd>4/5</dd></div>
+            </dl>
+            <button class="button button-light evidence-view-button" type="button" data-title="Quiz No. 4" data-image="Scores%20in%20Quizzes%20(Evidence%20of%20Learning)/Quiz%20No.4.PNG" aria-haspopup="dialog" aria-controls="quiz-picture-dialog">View picture</button>
+          </article>
+        </div>
+        
+    </section>
+
+    <dialog class="cv-dialog quiz-picture-dialog" id="quiz-picture-dialog" aria-labelledby="quiz-picture-title">
+      <div class="cv-dialog-header">
+        <div>
+          <p class="cv-dialog-kicker">Evidence of Learning · Quiz</p>
+          <h2 id="quiz-picture-title">Quiz picture</h2>
+        </div>
+        <button class="cv-dialog-close" type="button" aria-label="Close quiz picture">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="m6 6 12 12M18 6 6 18"/></svg>
+        </button>
+      </div>
+      <div class="quiz-picture-content">
+        <img id="quiz-picture" alt="">
+      </div>
+    </dialog>
+
+    <section class="section section-tint" id="retrospection" aria-labelledby="retrospection-title">
+      <div class="wrap reveal">
+        <div class="section-heading retrospection-heading">
+          <p class="section-kicker">06 · Looking back</p>
+          <h2 id="retrospection-title">Retrospection</h2>
+        </div>
+        <div class="retrospection-prose">
+          <p>Looking back on my Field Study 1 experience, I can say that the 16 learning episodes allowed me to see the teaching profession from a perspective that I had not fully considered before. What I initially thought would be mostly about watching classroom discussions became an experience of paying attention to the small details that influence what happens inside and outside the classroom. From the school environment to the different personalities and circumstances of learners, I discovered that there is often more behind a student's behavior or performance than what can be noticed at first glance. These experiences reminded me that, as a future teacher, I should learn to observe carefully, avoid making immediate judgments, and consider situations from the learners' perspective before deciding how to respond.</p>
+          <p>Accomplishing the different worksheet activities also encouraged me to become more critical of what I observed instead of simply accepting that a teaching practice was effective because the class appeared attentive or the activity was completed. There were moments when I found myself thinking about what I would have done differently, especially when considering students who needed further assistance or opportunities to participate. I also developed greater respect for my resource teacher after seeing how much thought and effort went into decisions that students might not even notice, from preparing classroom activities to responding to unexpected situations and managing responsibilities throughout the school day. More than anything, I learned that there is no single approach that will work perfectly in every classroom, and recognizing when something needs improvement is part of becoming a better teacher.</p>
+          <p>As I reach the final part of this e-portfolio, I feel grateful for the opportunity to experience what it means to be in a classroom not merely as a student, but as someone preparing to take on the responsibility of teaching others. Field Study 1 did not make the profession seem easier; instead, it made me more aware of its demands and the areas in which I still need to improve. I know that I have yet to experience the full responsibility of handling my own class, but the observations, interviews, and activities have given me a more realistic view of what awaits me. As a future mathematics educator, I want to carry these realizations into my next teaching experiences and continue developing the judgment, skills, and professional values necessary to make thoughtful decisions for my learners. I consider this experience not simply the completion of another academic requirement, but a meaningful reminder that becoming a teacher is a continuous process of learning from others, examining one's own practices, and striving to do better.</p>
+        </div>
+        <blockquote class="retrospection-quote">“It’s not just the numbers, it’s the service.”</blockquote>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner wrap">
+      <p>Field Notes · Andrea V. Romanillos · 2026–2027</p>
+      <div class="footer-actions">
+        <a href="#home">Back to top</a>
+      </div>
+    </div>
+  </footer>
+
+  <div class="portfolio-chat" id="portfolio-chat">
+    <section class="chat-panel" id="chat-panel" role="dialog" aria-labelledby="chat-title" aria-modal="false" hidden>
+      <header class="chat-header">
+        <img class="chat-avatar" src="PIC/FormalPicture.png" alt="">
+        <div class="chat-heading">
+          <h2 id="chat-title">Get to know Andrea</h2>
+          <p>Choose a topic</p>
+        </div>
+        <button class="chat-close" id="chat-close" type="button" aria-label="Close chat">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="m6 6 12 12M18 6 6 18"/></svg>
+        </button>
+      </header>
+      <div class="chat-log" id="chat-log" role="log" aria-live="polite" aria-relevant="additions">
+        <div class="chat-message chat-message-bot">
+          <span class="chat-message-name">Andrea</span>
+          <p>Hi! I’m Andrea. Choose a topic below and I’ll tell you about my background and Field Study 1 experience.</p>
+        </div>
+      </div>
+      <div class="chat-suggestions" id="chat-suggestions" aria-label="Choose a topic">
+        <button type="button" data-question="Who is Andrea?">About Andrea</button>
+        <button type="button" data-question="What did she study?">Education</button>
+        <button type="button" data-question="What did she learn in Field Study 1?">Field Study 1</button>
+        <button type="button" data-question="What is her teaching philosophy?">Teaching philosophy</button>
+        <button type="button" data-question="What are her future goals?">Future goals</button>
+        <button type="button" data-question="What are her quiz scores?">Quiz scores</button>
+        <button type="button" data-question="How can I view her CV?">View CV</button>
+      </div>
+    </section>
+    <button class="chat-launcher" id="chat-launcher" type="button" aria-expanded="false" aria-controls="chat-panel" aria-label="Open chat about Andrea">
+      <span aria-hidden="true">☺</span>
+    </button>
+  </div>
+
+  <script>
+    const introSplash = document.querySelector('#intro-splash');
+    if (document.documentElement.classList.contains('intro-pending')) {
+      const skipIntro = document.querySelector('#skip-intro');
+      let introTimer;
+      const finishIntro = () => {
+        window.clearTimeout(introTimer);
+        document.documentElement.classList.remove('intro-pending');
+        document.documentElement.classList.add('intro-exiting');
+        window.setTimeout(() => {
+          introSplash.remove();
+          document.documentElement.classList.remove('intro-exiting');
+        }, 600);
+      };
+
+      requestAnimationFrame(() => introSplash.classList.add('is-revealed'));
+      introTimer = window.setTimeout(finishIntro, 2800);
+      skipIntro.addEventListener('click', finishIntro, { once: true });
+    } else {
+      introSplash.remove();
+    }
+
+    const menuToggle = document.querySelector('.menu-toggle');
+    const primaryNavigation = document.querySelector('#primary-navigation');
+    const navLinks = [...document.querySelectorAll('.nav-link')];
+    const sections = navLinks.map(link => document.querySelector(link.getAttribute('href'))).filter(Boolean);
+    const themeButtons = [...document.querySelectorAll('.theme-option')];
+    const themeColor = document.querySelector('meta[name="theme-color"]');
+
+    const setPortfolioTheme = theme => {
+      const isDark = theme === 'dark';
+      if (isDark) document.documentElement.dataset.theme = 'dark';
+      else delete document.documentElement.dataset.theme;
+      themeButtons.forEach(button => button.setAttribute('aria-pressed', String(button.dataset.themeChoice === theme)));
+      themeColor.content = isDark ? '#17161a' : '#681c32';
+      try {
+        localStorage.setItem('fieldStudyPortfolioTheme', theme);
+      } catch {}
+    };
+
+    setPortfolioTheme(document.documentElement.dataset.theme === 'dark' ? 'dark' : 'light');
+    themeButtons.forEach(button => button.addEventListener('click', () => setPortfolioTheme(button.dataset.themeChoice)));
+
+    menuToggle.addEventListener('click', () => {
+      const isOpen = menuToggle.getAttribute('aria-expanded') === 'true';
+      menuToggle.setAttribute('aria-expanded', String(!isOpen));
+      primaryNavigation.classList.toggle('is-open', !isOpen);
+    });
+
+    navLinks.forEach(link => link.addEventListener('click', () => {
+      menuToggle.setAttribute('aria-expanded', 'false');
+      primaryNavigation.classList.remove('is-open');
+    }));
+
+    const cvDialog = document.querySelector('#cv-dialog');
+    const cvOpenButton = document.querySelector('#open-cv');
+    const cvCloseButton = document.querySelector('.cv-dialog-close');
+    cvOpenButton.addEventListener('click', () => cvDialog.showModal());
+    cvCloseButton.addEventListener('click', () => cvDialog.close());
+    cvDialog.addEventListener('cancel', event => {
+      event.preventDefault();
+      cvDialog.close();
+    });
+    document.addEventListener('keydown', event => {
+      const openDialog = document.querySelector('dialog[open]');
+      if (event.key === 'Escape' && openDialog) {
+        event.preventDefault();
+        openDialog.close();
+      }
+    });
+    cvDialog.addEventListener('click', event => {
+      const bounds = cvDialog.getBoundingClientRect();
+      const clickedOutside = event.clientX < bounds.left || event.clientX > bounds.right || event.clientY < bounds.top || event.clientY > bounds.bottom;
+      if (clickedOutside) cvDialog.close();
+    });
+    cvDialog.addEventListener('close', () => cvOpenButton.focus());
+
+    const quizPictureDialog = document.querySelector('#quiz-picture-dialog');
+    const quizPicture = document.querySelector('#quiz-picture');
+    const quizPictureTitle = document.querySelector('#quiz-picture-title');
+    const quizPictureCloseButton = quizPictureDialog.querySelector('.cv-dialog-close');
+    let quizPictureOpenButton = null;
+    document.querySelectorAll('.evidence-view-button').forEach(button => {
+      button.addEventListener('click', () => {
+        quizPictureOpenButton = button;
+        quizPictureTitle.textContent = button.dataset.title;
+        quizPicture.src = button.dataset.image;
+        quizPicture.alt = `Screenshot for ${button.dataset.title}`;
+        quizPictureDialog.showModal();
+      });
+    });
+    quizPictureCloseButton.addEventListener('click', () => quizPictureDialog.close());
+    quizPictureDialog.addEventListener('cancel', event => {
+      event.preventDefault();
+      quizPictureDialog.close();
+    });
+    quizPictureDialog.addEventListener('click', event => {
+      const bounds = quizPictureDialog.getBoundingClientRect();
+      const clickedOutside = event.clientX < bounds.left || event.clientX > bounds.right || event.clientY < bounds.top || event.clientY > bounds.bottom;
+      if (clickedOutside) quizPictureDialog.close();
+    });
+    quizPictureDialog.addEventListener('close', () => quizPictureOpenButton?.focus());
+
+    const episodeReflectionDialog = document.querySelector('#episode-reflection-dialog');
+    const episodeReflectionTitle = document.querySelector('#episode-reflection-episode-title');
+    const episodeReflectionContent = document.querySelector('#episode-reflection-content');
+    const episodeReflectionCloseButton = episodeReflectionDialog.querySelector('.cv-dialog-close');
+    let episodeReflectionOpenButton = null;
+    episodeReflectionCloseButton.addEventListener('click', () => episodeReflectionDialog.close());
+    episodeReflectionDialog.addEventListener('cancel', event => {
+      event.preventDefault();
+      episodeReflectionDialog.close();
+    });
+    episodeReflectionDialog.addEventListener('click', event => {
+      const bounds = episodeReflectionDialog.getBoundingClientRect();
+      const clickedOutside = event.clientX < bounds.left || event.clientX > bounds.right || event.clientY < bounds.top || event.clientY > bounds.bottom;
+      if (clickedOutside) episodeReflectionDialog.close();
+    });
+    episodeReflectionDialog.addEventListener('close', () => episodeReflectionOpenButton?.focus());
+
+    const learningEpisodes = [
+      {
+        title: 'Learning Episode 1: The School Environment',
+        cardTitle: 'The School Environment',
+        summary: 'How school facilities and learning spaces shape students’ comfort, focus, and learning experiences.',
+        link: 'https://drive.google.com/drive/folders/1KtK3B-8ZlyWpbck9jZWpRt8wab0_vuUd',
+        reflection: `Observing the school environment made me realize that students' learning experiences are influenced not only by classroom instruction but also by the condition of the school facilities and learning spaces. I recognized that proper ventilation, cleanliness, classroom organization, and informative bulletin boards contribute to a setting where learners can feel comfortable and remain focused. This experience taught me that even simple improvements in the physical environment can make a meaningful difference in supporting students' academic and personal needs.`
+      },
+      {
+        title: 'Learning Episode 2: Learner Diversity-Developmental Characteristics, Needs and Interests',
+        cardTitle: 'Learner Development, Needs and Interests',
+        summary: 'Learners’ developmental stages shape their abilities, interests, confidence, and learning needs.',
+        link: 'https://drive.google.com/drive/folders/1Ftk0y27NCUYLi2xdjH17lIB-9W6eZDO5',
+        reflection: `Observing learners at different developmental stages helped me recognize that their abilities, behaviors, interests, and learning needs vary according to their age and individual experiences. While observing Grade 3 pupils, I was reminded of my own experiences as a student and noticed how their confidence and willingness to participate differed from mine at their age. I realized that understanding learners' developmental characteristics is essential in selecting appropriate teaching strategies, providing guidance, and helping them develop independence at their own pace.`
+      },
+      {
+        title: 'Learning Episode 3: Focus on Gender, Needs, Strengths, Interests, Experiences, Language, Race, Culture, Religion, Socio-economic Status, Difficult Circumstances, and Indigenous People',
+        cardTitle: 'Learner Diversity and Inclusion',
+        summary: 'Recognizing learners’ differences and cultural backgrounds supports respectful, meaningful participation.',
+        link: 'https://drive.google.com/drive/folders/1Gbc9gFHa0ApA7VwVjmyTkHnhqC7ymsM6',
+        reflection: `This episode broadened my perspective on learner diversity and reminded me that students should not be judged solely by their academic performance, behavior, or ability to participate in class. Through classroom observations, an interview with a SPED teacher, and after watching a documentary about Indigenous Peoples' education, I learned how individual differences and cultural backgrounds influence learning experiences. I realized that providing equal learning opportunities does not necessarily mean giving every student the same activities or level of support. Rather, teachers should recognize each learner's differences and use appropriate approaches that promote inclusion, respect, and meaningful participation.`
+      },
+      {
+        title: 'Learning Episode 4: Learner Diversity: The Community and Home Environment',
+        cardTitle: 'The Community and Home Environment',
+        summary: 'Family guidance, emotional support, and communication contribute to learners’ development.',
+        link: 'https://drive.google.com/drive/folders/1BAwELLVM63FLg_L74BO7qphxSq4kTlKH',
+        reflection: `The observation and interview activities helped me appreciate how a learner's family environment can influence academic performance, behavior, and personal development. I realized that parental guidance, emotional support, appropriate discipline, and communication contribute to how students manage their responsibilities and challenges in school. Reflecting on my own upbringing also reminded me that the values and support developed at home can have a lasting influence on a person's growth. This experience strengthened my belief that teachers and families should work together to provide learners with consistent guidance and opportunities for development.`
+      },
+      {
+        title: 'Learning Episode 5: Creating an Appropriate Learning Environment',
+        cardTitle: 'Creating an Appropriate Learning Environment',
+        summary: 'Clear instructions, respectful reminders, and positive reinforcement can support classroom participation.',
+        link: 'https://drive.google.com/drive/folders/1ME4GIe-sQcfMd-RVSEYhU3ik8SobK11H',
+        reflection: `Observing my resource teacher's classroom management practices showed me that maintaining discipline does not always require strict or harsh approaches. His use of clear instructions, respectful reminders, verbal praise, and positive reinforcement encouraged students to participate while maintaining appropriate behavior. I realized that an effective learning environment should balance clear expectations with opportunities for learners to develop responsibility, self-discipline, and confidence in their abilities.`
+      },
+      {
+        title: 'Learning Episode 6: Classroom Management and Classroom Routines',
+        cardTitle: 'Classroom Management and Routines',
+        summary: 'Consistent routines help students feel prepared and keep classroom learning organized.',
+        link: 'https://drive.google.com/drive/folders/1TPQuHjfdSx8WrQjpAA3O4jthhJSQDUNK',
+        reflection: `This episode helped me appreciate how consistent classroom routines allow teaching and learning activities to proceed in an organized manner. I observed that preparing learning materials, reviewing previous lessons, checking attendance, and establishing clear classroom rules helped students understand what was expected of them. As a future mathematics educator, I would adopt routines that encourage preparedness, academic honesty, independent problem-solving, and respect for others because these practices can contribute to a productive learning environment.`
+      },
+      {
+        title: 'Learning Episode 7: Physical and Personal Aspects of Classroom Management',
+        cardTitle: 'Physical and Personal Classroom Management',
+        summary: 'A teacher’s conduct and classroom conditions both influence students’ attention and cooperation.',
+        link: 'https://drive.google.com/drive/folders/1__caMlZ3xrjD4Tb9SrmhT8GkAN67g4U_',
+        reflection: `I learned that effective classroom management involves both the teacher's personal qualities and the physical conditions of the learning environment. My resource teacher's clear communication, professional appearance, and appropriate classroom behavior demonstrated how a teacher's conduct can influence students' attention and cooperation. This observation made me recognize that even a well-prepared lesson may not achieve its intended outcomes when the classroom is poorly managed or learners are distracted by unfavorable conditions.`
+      },
+      {
+        title: 'Learning Episode 8: Close Encounter with School Curriculum',
+        cardTitle: 'The School Curriculum',
+        summary: 'Curriculum standards, instruction, resources, and assessment connect to students’ learning experiences.',
+        link: 'https://drive.google.com/drive/folders/1ggfZieJ3sNTdJETQDEP_f6ysho7FT6UN',
+        reflection: `Examining the seven types of curriculum helped me understand that curriculum implementation is a connected process involving educational standards, lesson planning, instruction, learning resources, and assessment. I realized that what students eventually learn depends on how effectively these components are translated into actual classroom experiences. I also became more aware of the hidden curriculum, particularly how students develop attitudes, values, and behaviors through daily interactions and practices that are not explicitly written in lesson plans.`
+      },
+      {
+        title: 'Learning Episode 9: Preparing for Teaching and Learning',
+        cardTitle: 'Preparing for Teaching and Learning',
+        summary: 'Clear objectives and active mathematical problem-solving help learners construct understanding.',
+        link: 'https://drive.google.com/drive/folders/1rSsupP7ZAp_1pklfdV9amSmxUkJIDZ_m',
+        reflection: `This episode strengthened my belief that clear and attainable learning outcomes should serve as the foundation of every lesson. Observing how my resource teacher encouraged students to solve mathematical problems, explain their reasoning, and exchange ideas showed me that effective instruction should develop understanding rather than focus only on memorization and test performance. I realized that careful preparation becomes more meaningful when teaching strategies provide opportunities for learners to think independently and actively participate in constructing their knowledge.`
+      },
+      {
+        title: 'Learning Episode 10: The Instructional Cycle',
+        cardTitle: 'The Instructional Cycle',
+        summary: 'Learning objectives, teaching strategies, activities, and assessment should work together.',
+        link: 'https://drive.google.com/drive/folders/1VovFioTbq4V9ntmSRjvnB8OFe6YwJouB',
+        reflection: `This learning episode helped me understand how learning objectives, teaching strategies, classroom activities, and assessments should be connected to achieve the intended learning outcomes. I noticed how my resource teacher used different questioning techniques, encouraged students to explain their answers, and provided appropriate feedback during classroom discussions. Through this experience, I realized that effective teaching involves more than completing planned activities, as it also requires monitoring students' understanding, encouraging critical thinking, and making necessary adjustments to address their learning needs.`
+      },
+      {
+        title: 'Learning Episode 11: Utilizing Teaching-Learning Resources and ICT',
+        cardTitle: 'Teaching-Learning Resources and ICT',
+        summary: 'Thoughtful technology use can make mathematics explanations clearer and more interactive.',
+        link: 'https://drive.google.com/drive/folders/1d9n5R2L3torSd5du0O2dadrfNBgMg6ST',
+        reflection: `Observing the use of PowerPoint presentations, a laptop, television, and other instructional materials showed me how technology can support clearer explanations and more organized Mathematics discussions. However, I realized that effective technology integration should go beyond presenting information and should also encourage learners to explore concepts and participate actively. This motivated me to further develop my skills in educational applications such as GeoGebra and Desmos, which can provide interactive ways of understanding mathematical relationships and solving problems.`
+      },
+      {
+        title: 'Learning Episode 12: Assessment FOR Learning and Assessment AS Learning (Formative Assessment)',
+        cardTitle: 'Assessment for and as Learning',
+        summary: 'Formative assessment can identify difficulties, guide learners, and build self-monitoring.',
+        link: 'https://drive.google.com/drive/folders/1dqcDl6LpOUDSoyuGNdtVDSMeD4Sb_u01',
+        reflection: `This episode changed my previous understanding of assessment as something mainly associated with quizzes, scores, and correct answers. Through observing oral questioning, pair activities, and students' explanations, I realized that assessment can take place throughout instruction to identify difficulties and provide immediate guidance. I also learned that allowing learners to recognize and correct their mistakes encourages them to monitor their own progress and become more responsible for their learning.`
+      },
+      {
+        title: 'Learning Episode 13: Assessment OF Learning (Summative Assessment)',
+        cardTitle: 'Assessment of Learning',
+        summary: 'Fair assessment aligns instruments with outcomes and includes authentic demonstrations of learning.',
+        link: 'https://drive.google.com/drive/folders/11hySTVp8FsAkHVSHVvCptW9IQKjyVReJ',
+        reflection: `Examining different assessment tools helped me realize that evaluating student learning requires more than preparing questions and assigning grades. Through the assessment activities, particularly the analysis of performance tasks, scoring rubrics, and the Table of Specifications, I learned the importance of aligning assessments with learning outcomes and the cognitive skills expected from learners. I also recognized that authentic tasks can reveal students' ability to apply knowledge, communicate ideas, and demonstrate skills that may not be fully measured through written examinations. This experience reminded me that fair and meaningful assessment requires careful planning and a clear understanding of what students are expected to learn.`
+      },
+      {
+        title: 'Learning Episode 14: Knowing the Quality Teacher: The Teacher as a Person and as a Professional',
+        cardTitle: 'The Quality Teacher',
+        summary: 'Professional competence includes subject knowledge, approachability, ethics, and care for learners.',
+        link: 'https://drive.google.com/drive/folders/1pDrQipadrCGnNtldnboLjuWjBV-SyWM0',
+        reflection: `Observing my resource teacher helped me recognize that professional competence involves more than mastery of the subject matter and effective lesson delivery. I appreciated how he remained approachable, treated students respectfully, and provided guidance when they encountered difficulties instead of simply moving forward with the discussion. This experience made me reflect on the importance of professional ethics, continuous improvement, and a genuine commitment to learners' development in becoming a quality teacher.`
+      },
+      {
+        title: 'Learning Episode 15: Towards Teacher Quality: Developing a Glocal Teacher of the 21st Century',
+        cardTitle: 'Developing a Glocal Teacher',
+        summary: 'Teachers balance local needs with global perspectives, adaptability, and ongoing professional growth.',
+        link: 'https://drive.google.com/drive/folders/1nbkSF0myq0k92egByaLYYAd6ZnJ91mni',
+        reflection: `This episode gave me a greater appreciation of the responsibilities teachers manage beyond actual classroom instruction, particularly preparing learning materials, monitoring student progress, and completing administrative requirements. I realized that balancing these responsibilities while responding to learners' individual needs requires effective time management, adaptability, and continuous professional growth. As a future mathematics educator, I also recognized the value of becoming a glocal teacher who understands local educational needs while remaining open to global innovations, particularly those that strengthen collaboration, critical thinking, and the meaningful use of technology.`
+      },
+      {
+        title: 'Learning Episode 16: On Teacher’s Philosophy of Education',
+        cardTitle: 'A Teacher’s Philosophy of Education',
+        summary: 'Educational philosophies can connect mathematical knowledge, critical thinking, and community life.',
+        link: 'https://drive.google.com/drive/folders/12GKXJsSeRFDXcFJntFPzhm8Dt2BprYNi',
+        reflection: `Examining different educational philosophies helped me understand how a teacher's beliefs influence instructional approaches, classroom relationships, and learning experiences. I recognized that Essentialism, Progressivism, and Constructivism can complement one another by emphasizing mastery of fundamental concepts while encouraging active participation, reasoning, and independent learning. I also realized the value of giving greater attention to Reconstructionism so that Mathematics lessons can be connected to real community concerns and practical situations. This episode strengthened my personal belief that teaching should develop not only students' mathematical knowledge but also their ability to think critically, make informed decisions, and use what they learn beyond the classroom.`
+      }
+    ];
+
+    const activityGrid = document.querySelector('#activity-grid');
+    const initialEpisodeCount = 8;
+    learningEpisodes.forEach((episode, index) => {
+      const card = document.createElement('article');
+      card.className = 'activity-card';
+      card.hidden = index >= initialEpisodeCount;
+
+      const topLine = document.createElement('div');
+      topLine.className = 'activity-topline';
+      const number = document.createElement('span');
+      number.className = 'activity-number';
+      number.textContent = `Learning Episode ${String(index + 1).padStart(2, '0')}`;
+      topLine.append(number);
+
+      const heading = document.createElement('h3');
+      heading.textContent = episode.cardTitle;
+      const summary = document.createElement('p');
+      summary.textContent = episode.summary;
+
+      const actions = document.createElement('div');
+      actions.className = 'activity-actions';
+      const link = document.createElement('a');
+      link.className = 'button button-outline';
+      link.href = episode.link;
+      link.target = '_blank';
+      link.rel = 'noopener noreferrer';
+      link.textContent = 'View Learning Episode';
+      const reflectionButton = document.createElement('button');
+      reflectionButton.className = 'button button-maroon';
+      reflectionButton.type = 'button';
+      reflectionButton.setAttribute('aria-haspopup', 'dialog');
+      reflectionButton.setAttribute('aria-controls', 'episode-reflection-dialog');
+      reflectionButton.textContent = 'View Reflection';
+      actions.append(link, reflectionButton);
+      card.append(topLine, heading, summary, actions);
+      activityGrid.append(card);
+
+      reflectionButton.addEventListener('click', () => {
+        episodeReflectionOpenButton = reflectionButton;
+        episodeReflectionTitle.textContent = episode.title;
+        episodeReflectionContent.textContent = episode.reflection;
+        episodeReflectionDialog.showModal();
+      });
+    });
+
+    episodeReflectionCloseButton.addEventListener('click', () => episodeReflectionDialog.close());
+    episodeReflectionDialog.addEventListener('cancel', event => {
+      event.preventDefault();
+      episodeReflectionDialog.close();
+    });
+    episodeReflectionDialog.addEventListener('click', event => {
+      const bounds = episodeReflectionDialog.getBoundingClientRect();
+      const clickedOutside = event.clientX < bounds.left || event.clientX > bounds.right || event.clientY < bounds.top || event.clientY > bounds.bottom;
+      if (clickedOutside) episodeReflectionDialog.close();
+    });
+    episodeReflectionDialog.addEventListener('close', () => episodeReflectionOpenButton?.focus());
+
+    const activityCards = [...activityGrid.querySelectorAll('.activity-card')];
+    const activityMore = document.querySelector('#activity-more');
+    const activityMoreLabel = activityMore.querySelector('span');
+    const activityCount = document.querySelector('#activity-count');
+    let showAllActivities = false;
+
+    const updateActivityList = () => {
+      const visibleCards = showAllActivities ? activityCards : activityCards.slice(0, initialEpisodeCount);
+      activityCards.forEach(card => { card.hidden = !visibleCards.includes(card); });
+      activityMore.hidden = activityCards.length <= initialEpisodeCount;
+      activityMore.setAttribute('aria-expanded', String(showAllActivities));
+      activityMoreLabel.textContent = showAllActivities ? 'Show fewer episodes' : 'View more episodes';
+      activityCount.textContent = `Showing ${visibleCards.length} of ${activityCards.length} learning episodes`;
+    };
+
+    activityMore.addEventListener('click', () => {
+      showAllActivities = !showAllActivities;
+      updateActivityList();
+    });
+    updateActivityList();
+
+    const chatPanel = document.querySelector('#chat-panel');
+    const chatLauncher = document.querySelector('#chat-launcher');
+    const chatClose = document.querySelector('#chat-close');
+    const chatLog = document.querySelector('#chat-log');
+    const chatSuggestions = document.querySelector('#chat-suggestions');
+    const chatTopicButtons = [...chatSuggestions.querySelectorAll('button')];
+
+    const setChatOpen = isOpen => {
+      chatPanel.hidden = !isOpen;
+      chatLauncher.setAttribute('aria-expanded', String(isOpen));
+      chatLauncher.setAttribute('aria-label', isOpen ? 'Close topic menu about Andrea' : 'Open topic menu about Andrea');
+      if (isOpen) chatTopicButtons[0].focus();
+      else chatLauncher.focus();
+    };
+
+    chatLauncher.addEventListener('click', () => setChatOpen(chatPanel.hidden));
+    chatClose.addEventListener('click', () => setChatOpen(false));
+    document.addEventListener('keydown', event => {
+      if (event.key === 'Escape' && !chatPanel.hidden) setChatOpen(false);
+    });
+
+    const getChatReply = question => {
+      const text = question.toLowerCase();
+      if (/\b(hello|hi|hey|good morning|good afternoon)\b/.test(text)) {
+        return { message: 'Hi! I’m Andrea V. Romanillos. Choose a topic and I’ll tell you about my studies or Field Study 1 experience.', href: '#biography', linkText: 'Read my biography' };
+      }
+      if (/\b(cv|resume|curriculum vitae)\b/.test(text)) {
+        return { message: 'You can view my CV using the View CV button in my FSS Biography section.', href: '#biography', linkText: 'Go to my FSS Biography' };
+      }
+      if (/\b(goal|goals|after graduation|future plan|licensure|lept)\b/.test(text)) {
+        return { message: 'After graduation, I plan to take the Licensure Examination for Professional Teachers. I also hope to pursue a master’s degree and support my family.', href: '#biography', linkText: 'Read my biography' };
+      }
+      if (/\b(episode|worksheet|field study|portfolio|school environment|learner diversity)\b/.test(text)) {
+        return { message: 'My Field Study 1 portfolio documents 16 learning episodes at UCN–Abaño Laboratory High School. They cover the school environment, learner diversity, classroom management, curriculum, instruction, assessment, and teachers’ professional responsibilities.', href: '#activities', linkText: 'Browse my 16 learning episodes' };
+      }
+      if (/\b(philosophy|teaching|belief|educat|learner-centered|learners)\b/.test(text)) {
+        return { message: 'I believe effective mathematics teaching combines strong subject knowledge with learner-centered experiences. My philosophy emphasizes inclusion, clear learning goals, active participation, useful feedback, and connecting mathematics with real life.', href: '#philosophy', linkText: 'Read my teaching philosophy' };
+      }
+      if (/\b(quiz|score|scores|assessment)\b/.test(text)) {
+        return { message: 'My Evidence of Learning section includes four quiz results from September 15, 2026: I scored 5/5 on Quiz 1 and 4/5 on Quizzes 2, 3, and 4.', href: '#evidence', linkText: 'View my quiz evidence' };
+      }
+      if (/\b(study|program|major|degree|university|math|mathematics)\b/.test(text)) {
+        return { message: 'I am a fourth-year pre-service mathematics teacher at the University of Camarines Norte, Abaño Campus, pursuing a Bachelor of Secondary Education major in Mathematics.', href: '#biography', linkText: 'See my FSS profile' };
+      }
+      if (/\b(who|about|andrea|background|know)\b/.test(text)) {
+        return { message: 'I’m Andrea V. Romanillos, a future mathematics educator. My interest in teaching grew through my family of educators and early experiences helping younger learners.', href: '#biography', linkText: 'Read my biography' };
+      }
+      return { message: 'Choose a topic to learn about my background, education, Field Study 1 episodes, teaching philosophy, CV, or quiz results.', href: '#introduction', linkText: 'Go to my portfolio introduction' };
+    };
+
+    const appendChatMessage = reply => {
+      const bubble = document.createElement('div');
+      bubble.className = 'chat-message chat-message-bot';
+      const name = document.createElement('span');
+      name.className = 'chat-message-name';
+      name.textContent = 'Andrea';
+      bubble.append(name);
+      const paragraph = document.createElement('p');
+      paragraph.textContent = reply.message;
+      bubble.append(paragraph);
+      const link = document.createElement('a');
+      link.className = 'chat-message-link';
+      link.href = reply.href;
+      link.textContent = reply.linkText;
+      link.addEventListener('click', () => setChatOpen(false));
+      bubble.append(link);
+      chatLog.append(bubble);
+      chatLog.scrollTop = chatLog.scrollHeight;
+    };
+
+    const appendChatTyping = () => {
+      const bubble = document.createElement('div');
+      bubble.className = 'chat-message chat-message-bot chat-typing';
+      bubble.setAttribute('role', 'status');
+      bubble.setAttribute('aria-label', 'Andrea is typing');
+      const name = document.createElement('span');
+      name.className = 'chat-message-name';
+      name.textContent = 'Andrea';
+      const dots = document.createElement('span');
+      dots.className = 'chat-typing-dots';
+      dots.setAttribute('aria-hidden', 'true');
+      dots.innerHTML = '<span></span><span></span><span></span>';
+      bubble.append(name, dots);
+      chatLog.append(bubble);
+      chatLog.scrollTop = chatLog.scrollHeight;
+      return bubble;
+    };
+
+    let chatTypingTimer = null;
+    chatTopicButtons.forEach(button => {
+      button.addEventListener('click', () => {
+        if (chatTypingTimer !== null) return;
+        const reply = getChatReply(button.dataset.question);
+        const typing = appendChatTyping();
+        chatTopicButtons.forEach(choice => { choice.disabled = true; });
+        chatTypingTimer = window.setTimeout(() => {
+          typing.remove();
+          appendChatMessage(reply);
+          chatTopicButtons.forEach(choice => { choice.disabled = false; });
+          chatTypingTimer = null;
+        }, 3000);
+      });
+    });
+
+    if ('IntersectionObserver' in window && !document.hidden) {
+      const revealObserver = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('is-visible');
+            revealObserver.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.08 });
+      document.querySelectorAll('.reveal').forEach(element => revealObserver.observe(element));
+
+      const sectionObserver = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            navLinks.forEach(link => link.classList.toggle('is-active', link.getAttribute('href') === `#${entry.target.id}`));
+          }
+        });
+      }, { rootMargin: '-28% 0px -62% 0px' });
+      sections.forEach(section => sectionObserver.observe(section));
+    } else {
+      document.querySelectorAll('.reveal').forEach(element => element.classList.add('is-visible'));
+    }
+  </script>
+</body>
+</html>
