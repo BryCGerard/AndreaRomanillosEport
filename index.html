@@ -569,7 +569,9 @@
       if (isDark) document.documentElement.dataset.theme = 'dark';
       else delete document.documentElement.dataset.theme;
       themeButtons.forEach(button => button.setAttribute('aria-pressed', String(button.dataset.themeChoice === theme)));
-      themeColor.content = isDark ? '#17161a' : '#681c32';
+      if (themeColor) {
+        themeColor.content = isDark ? '#17161a' : '#681c32';
+      }
       try {
         localStorage.setItem('fieldStudyPortfolioTheme', theme);
       } catch {}
@@ -578,26 +580,36 @@
     setPortfolioTheme(document.documentElement.dataset.theme === 'dark' ? 'dark' : 'light');
     themeButtons.forEach(button => button.addEventListener('click', () => setPortfolioTheme(button.dataset.themeChoice)));
 
-    menuToggle.addEventListener('click', () => {
-      const isOpen = menuToggle.getAttribute('aria-expanded') === 'true';
-      menuToggle.setAttribute('aria-expanded', String(!isOpen));
-      primaryNavigation.classList.toggle('is-open', !isOpen);
-    });
+    if (menuToggle && primaryNavigation) {
+      menuToggle.addEventListener('click', () => {
+        const isOpen = menuToggle.getAttribute('aria-expanded') === 'true';
+        menuToggle.setAttribute('aria-expanded', String(!isOpen));
+        primaryNavigation.classList.toggle('is-open', !isOpen);
+      });
 
-    navLinks.forEach(link => link.addEventListener('click', () => {
-      menuToggle.setAttribute('aria-expanded', 'false');
-      primaryNavigation.classList.remove('is-open');
-    }));
+      navLinks.forEach(link => link.addEventListener('click', () => {
+        menuToggle.setAttribute('aria-expanded', 'false');
+        primaryNavigation.classList.remove('is-open');
+      }));
+    }
 
     const cvDialog = document.querySelector('#cv-dialog');
     const cvOpenButton = document.querySelector('#open-cv');
-    const cvCloseButton = document.querySelector('.cv-dialog-close');
-    cvOpenButton.addEventListener('click', () => cvDialog.showModal());
-    cvCloseButton.addEventListener('click', () => cvDialog.close());
-    cvDialog.addEventListener('cancel', event => {
-      event.preventDefault();
-      cvDialog.close();
-    });
+    if (cvDialog && cvOpenButton) {
+      const cvCloseButton = cvDialog.querySelector('.cv-dialog-close');
+      cvOpenButton.addEventListener('click', () => cvDialog.showModal());
+      cvCloseButton?.addEventListener('click', () => cvDialog.close());
+      cvDialog.addEventListener('cancel', event => {
+        event.preventDefault();
+        cvDialog.close();
+      });
+      cvDialog.addEventListener('click', event => {
+        const bounds = cvDialog.getBoundingClientRect();
+        const clickedOutside = event.clientX < bounds.left || event.clientX > bounds.right || event.clientY < bounds.top || event.clientY > bounds.bottom;
+        if (clickedOutside) cvDialog.close();
+      });
+      cvDialog.addEventListener('close', () => cvOpenButton.focus());
+    }
     document.addEventListener('keydown', event => {
       const openDialog = document.querySelector('dialog[open]');
       if (event.key === 'Escape' && openDialog) {
@@ -605,12 +617,6 @@
         openDialog.close();
       }
     });
-    cvDialog.addEventListener('click', event => {
-      const bounds = cvDialog.getBoundingClientRect();
-      const clickedOutside = event.clientX < bounds.left || event.clientX > bounds.right || event.clientY < bounds.top || event.clientY > bounds.bottom;
-      if (clickedOutside) cvDialog.close();
-    });
-    cvDialog.addEventListener('close', () => cvOpenButton.focus());
 
     const quizPictureDialog = document.querySelector('#quiz-picture-dialog');
     const quizPicture = document.querySelector('#quiz-picture');
